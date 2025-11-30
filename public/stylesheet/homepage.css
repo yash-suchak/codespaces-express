@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+.heading{
+    display: table;
+    margin: 20px auto;
+}
+.urls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+.urls > tr{
+    border: 1px solid black;
+}
+.urls .table-body{
+    width: 100%;
+}
+.urls .table-body tr{
+    display:flex;
+    align-items: center;
+    row-gap: 5px;
+    justify-content: space-around;
+}
+.urls .table-body td, th{
+    width: 25%;
+    height: -webkit-fill-available;
+    border: 1px solid black;
+    text-align: center;
+    word-break: break-all;
+    text-wrap-style: balance;
+}

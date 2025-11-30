@@ -1,11 +1,29 @@
 {
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon --env-file=.env index.js"
   },
+  "type": "module",
   "dependencies": {
-    "express": "^4.21.2"
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongoose": "^9.0.0",
+    "shortid": "^2.2.17"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
-  }
+  },
+  "name": "url-shortner",
+  "description": "Welcome to your shiny new Codespace running Express! We've got everything fired up and running for you to explore Express.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yash-suchak/url-shortener.git"
+  },
+  "author": "Yash Suchak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yash-suchak/url-shortener/issues"
+  },
+  "homepage": "https://github.com/yash-suchak/url-shortener#readme"
 }

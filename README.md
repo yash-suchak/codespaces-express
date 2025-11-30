@@ -11,3 +11,7 @@ To run this application:
 ```
 npm start
 ```
+Project Structure
+Routes: POST /URL returns shortId
+        Get /URL/shortId redirect
+        Get /URL/analytics returns number of visits and history

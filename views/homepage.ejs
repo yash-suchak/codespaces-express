@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Shi.ny - URL Shortner
+        </title>
+        <link rel="stylesheet" href="/stylesheet/homepage.css"/>
+    </head>
+    <body>
+    </label>
+        <h1 class="heading">Shi.ny - Shorten URLs like never before</h1>
+        <% if (locals.shortId) { %>
+         <h2>Here's your URL: https://shiny-happiness-p47jw67xxr39ppj-8001.app.github.dev/url/<%= shortId %></h2>
+        <% } %>
+        <table class="urls">
+            <tbody class="table-body">
+                <tr>
+                    <th>Sr.no</th>
+                    <th>Short url</th>
+                    <th> Redirect url</th>
+                    <th>Clicks</th>
+                </tr>
+                <% urls.forEach((url , index) => { %>
+                    <tr>
+                        <td><%= index+1 %>.</td>
+                        <td> <%= url.shortId %></li>
+                        <td><%= url.redirectURL %></td>
+                        <td><%= url.visitHistory.length %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </body>
+</html>
